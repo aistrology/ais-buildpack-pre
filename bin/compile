@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir> <env-dir>
+
+set -exuo pipefail
+
+BUILD_DIR=${1:-}
+CACHE_DIR=${2:-}
+ENV_DIR=${3:-}
+
+cd $BUILD_DIR
+
+cp service/text2img/requirements.txt .
+
+exit 0
